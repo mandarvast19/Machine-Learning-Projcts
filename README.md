@@ -1,2 +1,2 @@
-# Machine-Learning-Projcts
+# Machine-Learning-Projects
 My Machine Learning Projects are stored here.
