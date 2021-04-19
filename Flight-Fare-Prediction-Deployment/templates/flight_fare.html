@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Flight Fare Prediction</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<!--{{ url_for('static', filename='styles.css') }}-->
+<body>
+	<div class="heading">
+    <h2 class="title">Flight Fare Prediction</h2>
+	<p class="descrip">A machine learning Web Application designed with Flask!</p>
+	</div>
+	<form method="POST" action="{{ url_for('predict')}}">
+	<div class="Airline">
+	<!--<p> Choose Airline </p>-->
+		<select name="Airline" id="Airline" required>
+			<option value="">---Airline---</option>
+			<option value="Jet Airways">Jet Airways</option>
+			<option value="IndiGo">Indigo</option>
+			<option value="Air India">Air India</option>
+			<option value="Multiple carriers">Multiple carriers</option>
+			<option value="SpiceJet">SpiceJet</option>
+			<option value="Vistara">Vistara</option>
+			<option value="Air Asia">Air Asia</option>
+			<option value="GoAir">GoAir</option>
+			<option value="Multiple carriers Premium economy">Multiple carriers Premium economy</option>
+			<option value="Jet Airways Business">Jet Airways Business</option>
+			<option value="Vistara Premium economy">Vistara Premium economy</option>
+			<option value="Trujet">Trujet</option>
+		</select>	
+	</div>
+	<div class="Source">
+	<!--<h2>Source</h2>-->
+		<select name="Source" id="Source" required>
+			<option value="">---Source---</option>
+			<option value="Mumbai">Mumbai</option>
+			<option value="Delhi">Delhi</option>
+			<option value="Kolkata">Kolkata</option>
+			<option value="Banglore">Banglore</option>
+			<option value="Chennai">Chennai</option>
+		</select>	
+	</div>
+	<div class="Destination">
+	<!--<h2>Destination</h2>-->
+		<select name="Destination" id="Destination" required>
+			<option value="">---Destination---</option>
+			<option value="Cochin">Cochin</option>
+			<option value="Banglore">Banglore</option>
+			<option value="Delhi">Delhi</option>
+			<option value="New Delhi">New Delhi</option>
+			<option value="Hyderabad">Hyderabad</option>
+			<option value="Kolkata">Kolkata</option>
+		</select>
+	</div>
+	<div class="Total_Stops">
+	<!--<h2>Total Stops</h2>-->
+		<select name="Total_Stops" id="Total_Stops" required>
+			<option value="0">non-stop</option>
+			<option value="1">1 stop</option>
+			<option value="2">2 stop</option>
+			<option value="3">3 stop</option>
+			<option value="4">4 stop</option>
+		</select>
+	</div>
+	<div class="Dates" id="Dates">
+	<p class="departure_p">Departure Date</p>
+		<input class="departure_input" type="datetime-local" id="Departure_Date" name="Departure_Date" required>
+	<p class="arrival_p">Arrival Date</p>
+		<input class="arrival_input" type="datetime-local" id="Arrival_Date" name="Arrival_Date" required>
+	</div>
+	<div class="submit_div">
+	<input type="submit" class="submit_button" value="Predict Fare">
+	</div>
+    </form>
+    <div class="footer">
+		<a target="_blank" href="https://github.com/mandarvast19"><i class="fa fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/mandar-vast-68221a18a/"><i class="fa fa-linkedin-square"></i></a>
+		<p class="footer_p"> Made with <span class="footer_span">❤</span> by mandar</p>
+	</div>
+	
+</body>
+
+</html>

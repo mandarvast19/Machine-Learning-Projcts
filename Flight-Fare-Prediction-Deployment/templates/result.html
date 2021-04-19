@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Flight Fare Prediction</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+	<div class="heading">
+    <h2 class="title">Flight Fare Prediction</h2>
+	<p class="descrip">A machine learning Web Application designed with Flask!</p>
+	</div>
+	<div class="result_price">
+	<p>Predicted  Flight Fare is:</p>
+    <p>{{ predicted_price }}</p>
+	</div>
+	
+	<div class="footer">
+		<a target="_blank" href="https://github.com/mandarvast19"><i class="fa fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/mandar-vast-68221a18a/"><i class="fa fa-linkedin-square"></i></a>
+		<p class="footer_p"> Made with <span class="footer_span">❤</span> by mandar</p>
+	</div>
+</body>
+	
+</html>
