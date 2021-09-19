@@ -13,7 +13,7 @@
 <img src="https://user-images.githubusercontent.com/42676839/133927015-96efd61d-99a8-43b2-8a62-ac703002fbaf.png">
 
 ## Demo Link
-
+https://credit-underwriting.herokuapp.com/
 
 ## Overview
 This web app is built using Flask and deployed on Heroku.<br>
