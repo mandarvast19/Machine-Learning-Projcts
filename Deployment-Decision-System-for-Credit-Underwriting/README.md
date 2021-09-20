@@ -35,5 +35,5 @@ Directory structure should look like this:
 
 
 All other info regarding this project as well as notebooks can be found here : <br>
-[Decision System for Credit Underwriting](https://github.com/mandarvast19/Machine-Learning-Projects/tree/main/Decision%20System%20for%20Credit%20Underwriting)
+[Decision System for Credit Underwriting](https://github.com/mandarvast19/Machine-Learning-Projects/tree/main/Decision-System-for-Credit-Underwriting)
 
